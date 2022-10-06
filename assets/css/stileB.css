@@ -71,9 +71,6 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 @media screen and (min-width:800px) {
     header {
@@ -194,6 +191,22 @@ iframe {
     border-radius: 20px;
 }
 
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5px;
+}
+
+#grid-article {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+#grid-sidebar {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
 /* TABELLE */
 table {
     margin-bottom: 2em;
@@ -235,6 +248,15 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
+
+#form {
+    padding: 0px;
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    margin-top: 50px;
+}
+
 input {
     padding: 5px;
     border: 0;
